@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-weight:900;
+    color: rgb(6, 255, 255);
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: url(./images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+}
+h1{
+    background-color: rgb(6, 255, 255);
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.heading:hover, footer:hover{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+.title{
+    font-size: 2rem;
+}
+
+.sub-div-1{
+    text-align: center;
+}
+
+.sub-div-2{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.inner-div{
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 1rem;
+    -webkit-animation-name: borderAnimation;
+            animation-name: borderAnimation;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    animation-direction: reverse;
+}
+
+.expired{
+    text-align: center;
+}
+
+.text-field{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+}
+
+.text-field input{
+    width: 5rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 0.3rem;
+    border-color: transparent;
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+    color: black;
+}
+
+footer{
+    background-color: rgb(6, 255, 255);
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+@-webkit-keyframes borderAnimation {
+    0%{
+        border-top: 4px solid aqua;
+    }
+    25%{
+        border-left: 4px solid aqua;
+    }
+    50%{
+        border-bottom: 4px solid aqua;
+    }
+    100%{
+        border-right: 4px solid aqua;
+    }
+}
+
+@keyframes borderAnimation {
+    0%{
+        border-top: 4px solid aqua;
+    }
+    25%{
+        border-left: 4px solid aqua;
+    }
+    50%{
+        border-bottom: 4px solid aqua;
+    }
+    100%{
+        border-right: 4px solid aqua;
+    }
+}
