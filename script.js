@@ -1,4 +1,4 @@
-let endDate = new Date(2024, 0, 15, 23, 36);
+let endDate = new Date(2024, 0, 22, 0, 0);
 
 const dateId = document.getElementById("date");
 dateId.innerHTML = endDate.toDateString();
