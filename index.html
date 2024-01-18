@@ -13,7 +13,7 @@
         <h1 class="heading">CountDown</h1>
         <div class="inner-div">
             <div class="sub-div-1">
-                <p class="title">COMING SOON !!!</p>
+                <p class="title" id="date-title">COMING SOON !!!</p>
                 <p class="title" id="date">13 01 2024 8:30</p>
             </div>
             <div class="sub-div-2">
@@ -36,6 +36,21 @@
             </div>
         </div>
         <footer>Design By Rahul Tile</footer>
+        <div class="overlay" id="main1">
+            <div class="pop-up">
+                <div class="inner-pop">
+                    <label for="">Enter a caption :</label>
+                    <input type="text" id="captionInput" value="comming soon" placeholder="Enter a caption here...">
+                </div>
+                <div class="inner-pop">
+                    <label for="">Enter a date :</label>
+                    <input type="datetime-local" id="dataInput" placeholder="Enter a date here..">
+                </div>
+                <div class="inner-pop">
+                    <input type="submit" id="submit" onclick="formSubmit()">
+                </div>    
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

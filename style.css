@@ -72,6 +72,7 @@ h1{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -164,4 +165,78 @@ footer{
     100%{
         border-right: 4px solid aqua;
     }
+}
+.pop-up{
+    width: 20rem;
+    height: 15rem;
+    position: absolute;
+    background-color: white;
+    padding:15px;
+    margin: 10px;
+    border-radius: 5px;
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+}
+.pop-up label{
+    color: black;
+}
+
+.pop-up input{
+    width: 14rem;
+    height: 1.7rem;
+    padding: 3px;
+    color: grey;
+}
+
+.inner-pop{
+    width: 80%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.4rem;
+    
+}
+#submit{
+    background-color: rgb(163, 235, 235);
+    border-color: transparent;
+    border-radius: 5px;
+    color: black;
+}
+
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0,0.8);
+    z-index: 0;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.hide{
+    display: none !important;
 }
